@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formula 1 Central</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0d0d0d;
+      color: #f1f1f1;
+    }
+    header {
+      background-color: #e10600;
+      padding: 1rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      color: white;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #1a1a1a;
+      padding: 0.5rem 0;
+    }
+    nav a {
+      color: #f1f1f1;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #e10600;
+    }
+    .section {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .news-item, .race, .driver, .team {
+      background-color: #1a1a1a;
+      padding: 1rem;
+      margin: 1rem 0;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+    }
+    .news-item h3, .race h3, .driver h3, .team h3 {
+      margin-top: 0;
+      color: #e10600;
+    }
+    iframe {
+      border: none;
+      width: 100%;
+      height: 600px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Formula 1 Central</h1>
+  </header>
+  <nav>
+    <a href="#news">Breaking News</a>
+    <a href="#calendar">2025 Race Calendar</a>
+    <a href="#standings">Standings</a>
+    <a href="#profiles">Drivers & Teams</a>
+    <a href="#telemetry">Live Telemetry</a>
+  </nav>
+
+  <div class="section" id="news">
+    <h2>🗞️ Breaking News (AI Selected Top 8)</h2>
+    <iframe src="https://rss.app/embed/v1/wall/VA8zi7exxxy8I2Uz" loading="lazy"></iframe>
+  </div>
+
+  <div class="section" id="calendar">
+    <h2>📅 2025 Race Calendar</h2>
+    <div class="race">
+      <h3>March 9 – Bahrain Grand Prix</h3>
+      <p>Sakhir Circuit</p>
+    </div>
+    <div class="race">
+      <h3>March 16 – Saudi Arabian Grand Prix</h3>
+      <p>Jeddah Street Circuit</p>
+    </div>
+    <div class="race">
+      <h3>March 23 – Australian Grand Prix</h3>
+      <p>Melbourne, Albert Park</p>
+    </div>
+  </div>
+
+  <div class="section" id="standings">
+    <h2>🏁 Standings</h2>
+    <iframe src="https://www.formula1.com/en/results.html/2025/drivers.html" height="500"></iframe>
+    <iframe src="https://www.formula1.com/en/results.html/2025/team.html" height="500"></iframe>
+  </div>
+
+  <div class="section" id="profiles">
+    <h2>👥 Drivers & Teams</h2>
+    <div class="driver">
+      <h3>Lewis Hamilton</h3>
+      <p>Team: Ferrari | World Titles: 7 | Nationality: British</p>
+    </div>
+    <div class="driver">
+      <h3>Max Verstappen</h3>
+      <p>Team: Red Bull Racing | World Titles: 3 | Nationality: Dutch</p>
+    </div>
+    <div class="team">
+      <h3>Red Bull Racing</h3>
+      <p>Drivers: Max Verstappen, Sergio Pérez</p>
+    </div>
+    <div class="team">
+      <h3>Ferrari</h3>
+      <p>Drivers: Charles Leclerc, Lewis Hamilton</p>
+    </div>
+  </div>
+
+  <div class="section" id="telemetry">
+    <h2>🔧 Live Telemetry & Pit Stop Tracker</h2>
+    <iframe src="https://f1-dash.com/dashboard" title="F1 Live Dashboard"></iframe>
+  </div>
+</body>
+</html>
